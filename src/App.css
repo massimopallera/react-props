@@ -14,7 +14,7 @@
   --text-color: white;
 
   --img-size: 600px;
-  --card-br-radius: 10px;
+  --card-br-radius: 15px;
 }
 
 body{
@@ -45,12 +45,14 @@ main{
   
 .container{
   max-width: 1300px;
+  min-width: 650px;
   width: 80%;
   margin: auto;
 }
 
 .row{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }

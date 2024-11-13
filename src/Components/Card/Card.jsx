@@ -1,7 +1,7 @@
 import './Card.css'
 
 export default function Card({
-  title, content, image
+  title, content, image, tags
 }) {
    
   return (
@@ -15,9 +15,16 @@ export default function Card({
           <p className="card-text">
             {content}
           </p>
-          <a href="#" className="">
-            Leggi di più
-          </a>
+
+          <div className="card-footer">
+            <a href="#" className="">
+              Leggi di più
+            </a>
+
+            <div className='tags'>
+              {tags.map(tag => <span className={`badge ${tag}`} key={tag}>{tag}</span>)}
+            </div>
+          </div>
         </div>
       </div>
     </div>
