@@ -1,18 +1,19 @@
 import './Card.css'
-import posts from '../../assets/db/posts.js'
 
-export default function Card() {
+export default function Card({
+  title, content, image
+}) {
    
   return (
-    <div className="col-12">
+    <div className="col">
       <div className="card">
-        <img src={posts.img} alt="" className="card-img-top" />
+        <img src={image} alt="" className="card-img-top" />
         <div className="card-body">
           <h3 className="card-title">
-            {posts.title}
+            {title}
           </h3>
           <p className="card-text">
-            {posts.content}
+            {content}
           </p>
           <a href="#" className="">
             Leggi di più
